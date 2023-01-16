@@ -1,0 +1,189 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul , li{
+    list-style: none;
+}
+
+a , a:visited{
+    color: #8b9ba7;
+}
+
+.flex-c {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+
+.flex-n {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+
+/* body {
+} */
+
+#container {
+    background: #f2f3f5;
+    /* max-width: 90vw; */
+    /* margin: 0px auto; */
+    /* padding: 50px; */
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 12%;
+}
+
+#container .heading > h1 {
+    font-size: 3.2rem;
+    padding: 8px;
+}
+
+#container .heading > p {
+    font-size: 1.2rem;
+    color: #687479;
+    padding-bottom: 40px;
+}
+
+.card {
+    border-radius: 10px;
+    /*  */
+    background: #fefefe;
+    display: flex;
+    position: absolute;
+    top: 40vh;
+    left: auto;
+    margin: auto;
+    max-width: 90%;
+    box-shadow: 0px 5px 15px #aaaaaa;
+}
+.card > * {
+    padding: 30px 40px;
+}
+
+.card .membership {
+    width: 70%;
+}
+
+.card .membership > h2 {
+    font-size: 2rem;
+    padding-top: 5px;
+}
+
+.card .membership > p {
+    font-size: 1.1rem;
+    padding: 15px 0px;
+    color: #808080;
+}
+
+.card .pricing {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 30%;
+    background: #f9f9fb;
+}
+
+.card .membership .included h3 {
+    /* display: inline; */
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6159c1;
+    padding-right: 10px;
+    justify-self: right;
+}
+
+.card .membership .included .separator > div {
+    /* display: inline; */
+    width: 80%;
+    height: 2px;
+    background: #e9e9eb;
+    justify-self: left;
+}
+
+.separator {
+    margin: 20px 0px;
+}
+
+.bigul > ul {
+    width: 50%;
+}
+
+.bigul > ul > li {
+    padding: 10px 0px;
+}
+
+.pricing h3 {
+    font-size: 1.5rem;
+}
+
+.pricing .price > div:first-child {
+    font-size: 60px;
+    font-weight: 800;
+}
+.pricing .price > div:last-child {
+    padding: 15px;
+    color: gray;
+}
+
+#btn {
+    display: inline-block;
+    background: #1f2836;
+    width: 99%;
+    margin: 20px 0px;
+    padding: 15px 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+
+.pricing p > span {
+    color: gray;
+}
+
+@media (max-width: 960px) {
+    #container .heading {
+        margin-bottom: auto;
+    }
+    #container .heading > h1 {
+        font-size: 2.5rem;
+    }
+    html body div#container section.heading p {
+        font-size: 1rem;
+    }
+    .card {
+        flex-direction: column;
+    }
+    html body div#container section.card div.membership {
+        width: 100%;
+    }
+    html body div#container section.card div.pricing.flex-n {
+        width: 100%;
+    }
+    html body div#container section.card div.membership div.included ul.bigul.flex-c {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+}
